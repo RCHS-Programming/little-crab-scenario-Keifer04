@@ -7,9 +7,11 @@ public class Crab extends Actor
 {
     public void act()
     {
-       turn(-100); 
-       
-       move(30);
+       {
+        move ();
+        
+    }
+       move(3);
     }
     
     public void move( )
