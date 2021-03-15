@@ -7,16 +7,27 @@ public class Crab extends Actor
 {
     public void act()
     {
+    
+        if( isAtEdge())
+        {
+            turn (17);
+            
+        }
+       if(Greenfoot.getRandomNumber(100)<10 )
        {
-        move ();
-        
-    }
-       move(3);
+           turn(Greenfoot.getRandomNumber(91) -45 );
+       }
+       move();
+       
+       if(isTouching(Worm.class))
+       {
+           removeTouching(Worm.class);
+        }
     }
     
     public void move( )
     {
-        move(1);
+        move(5);
     }
 }
 
