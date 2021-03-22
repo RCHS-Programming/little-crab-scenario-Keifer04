@@ -8,6 +8,24 @@ public class CrabWorld extends World
      */
     public CrabWorld() 
     {
-        super(560, 560, 1);
+        super(640, 660, 1);
+        populateWorld();
+       
+    }
+    
+    public void populateWorld()
+    {
+         addObject(new Crab(), 150, 100);
+        addObject(new Lobster(), 400, 100);
+        addObject(new Lobster(), 400, 300);
+        addObject(new Lobster(), 400, 500);
+        addObject(new Worm(), 50, 50);
+        addObject(new Worm(), 250, 100);
+        addObject(new Worm(), 380, 400);
+        addObject(new Worm(), 480, 500);
+        addObject(new Worm(), 450, 350);
+        addObject(new Worm(), 300, 150);
+        addObject(new Worm(), 100, 250);
+        addObject(new Worm(), 200, 200);
     }
 }
