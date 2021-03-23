@@ -23,7 +23,7 @@ public class Lobster extends Actor
     }
     public void move( )
     {
-        move(5);
+        move(4);
     }
     /*
      * Hello this is notes look at them crab it will be eaten
