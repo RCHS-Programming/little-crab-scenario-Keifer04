@@ -48,6 +48,8 @@ public class Crab extends Actor
            Greenfoot.playSound("slurp.wav");
            wormEat = wormEat + 1; 
            
+           getWorld().showText("Score: " + wormEat, 50, 500);
+           
            
            if ( wormEat ==8)
            {Greenfoot.playSound ("fanfare.wav");
